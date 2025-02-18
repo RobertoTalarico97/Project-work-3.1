@@ -1,0 +1,121 @@
+/* Impostazioni generali del layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4; /* Colore di sfondo chiaro */
+    color: #333; /* Testo scuro per una buona leggibilità */
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #2C6B2F; /* Verde scuro per i link, */
+}
+
+a:hover {
+    color: #A2D5AB; /* Colore verde più chiaro per l'hover*/
+}
+
+/* Intestazione della pagina */
+header {
+    background-color: #2C6B2F; /* Verde chiaro */
+    color: white;
+    padding: 2rem 0;
+}
+
+header .container {
+    text-align: center;
+}
+
+header h1 {
+ font-size: 3rem;
+    background: linear-gradient(45deg, #00aaff, #7dd23c); /* Gradiente da blu a verde */
+    background-clip: text; /*proprietà per la compatibilità */
+    -webkit-background-clip: text; /* Rende il gradiente applicato solo al testo */
+    color: transparent; /* Nasconde il colore di base */
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.2rem;
+    background: linear-gradient(45deg, #00aaff, #7dd23c); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; 
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Corpo principale della pagina */
+main {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Sezione per i report */
+.report-list {
+    background-color: #ffffff; /* Colore di sfondo bianco per i report */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* ombra per separare visivamente il contenuto*/
+}
+
+.report-list h2 {
+    font-size: 1.8rem;
+    color: #2C6B2F; /* Verde scuro per i titoli */
+    margin-bottom: 1rem;
+}
+
+.report-list ul {
+    list-style-type: none;
+
+}
+
+.report-list li {
+    margin: 2rem 0;
+}
+
+.report-list a {
+    background-color: #A2D5AB; /* Verde chiaro per i  link di download */
+    font-size: 1.1rem;
+    color: #2C6B2F; 
+    border: 2px solid #2a5d3e; /* Bottone con bordo verde */
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.report-list a:hover {
+    background-color: #80B392; /* Verde più scuro */
+}
+
+
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    /*parametri per l'immagine */
+.img-sostenibilita {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
